@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 RUN apk update && \
-    apk add --no-cache docker-cli docker-cli-compose
+    apk add --no-cache --virtual docker-cli docker-cli-compose
 
 COPY renew_certs.sh /etc/periodic/daily/renew_certs
 
