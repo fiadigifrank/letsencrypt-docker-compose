@@ -19,7 +19,7 @@ services:
 
   certbot:
     build: ./certbot
-    image: evgeniy-khyst/certbot
+    image: fia_mssc/certbot
     env_file:
       - ./config.env
     volumes:
