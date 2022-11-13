@@ -1,20 +1,12 @@
 FROM alpine:latest
 
 RUN apk update \
-
-&& apk upgrade \
-
-&& apk add --no-cache bash \
-
+apk upgrade \
+apk add --no-cache bash \
 bash-doc \
-
 bash-completion \
-
-&& rm -rf /var/cache/apk/* \
-
-&& /bin/bash
-
-&& apk add --no-cache docker-cli docker-cli-compose
+rm -rf /var/cache/apk/* \
+/bin/bash && apk add --no-cache docker-cli docker-cli-compose
 
 COPY renew_certs.sh /etc/periodic/daily/renew_certs
 
