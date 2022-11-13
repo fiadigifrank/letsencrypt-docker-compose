@@ -1,6 +1,6 @@
 FROM certbot/certbot:latest
 
-RUN apk add --no-cache bash
+#RUN apk add --no-cache bash
 
 COPY certbot.sh /opt/
 
