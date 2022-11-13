@@ -1,4 +1,4 @@
-FROM certbot/certbot:v1.29.0
+FROM certbot/certbot:latest
 
 RUN apk add --no-cache bash
 
