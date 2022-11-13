@@ -3,7 +3,7 @@ version: "2"
 services:
   nginx:
     build: ./nginx
-    image: evgeniy-khyst/nginx
+    image: fia_mssc/nginx
     env_file:
       - ./config.env
     volumes:
@@ -28,7 +28,7 @@ services:
 
   cron:
     build: ./cron
-    image: evgeniy-khyst/cron
+    image: fia_mssc/cron
     environment:
       COMPOSE_PROJECT_NAME: "${COMPOSE_PROJECT_NAME}"
     volumes:
