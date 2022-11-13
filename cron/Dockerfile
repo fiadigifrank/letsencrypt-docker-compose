@@ -9,4 +9,6 @@ RUN chmod +x /etc/periodic/daily/renew_certs
 
 WORKDIR /workdir
 
+ENV PATH=/usr/local/bin:$PATH
+
 CMD ["crond", "-f", "-l", "0"]
