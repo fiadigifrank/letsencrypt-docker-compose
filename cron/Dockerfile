@@ -6,7 +6,7 @@ RUN apk update \
 #bash-completion \
 #rm -rf /var/cache/apk/* \
 #/bin/sh \
-    apk add --no-cache docker-cli docker-cli-compose
+    && apk add --no-cache docker-cli docker-cli-compose
 
 COPY renew_certs.sh /etc/periodic/daily/renew_certs
 
