@@ -1,4 +1,4 @@
-FROM arm64v8/alpine:latest
+FROM arm64v8/alpine
 
 RUN apk update \
 #apk upgrade \
