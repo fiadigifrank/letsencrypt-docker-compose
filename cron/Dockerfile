@@ -1,4 +1,4 @@
-FROM arm64v8/debian:bullseye-slim
+FROM alpine:latest
 
 RUN apk update && \
     apk add --no-cache docker-cli docker-cli-compose
